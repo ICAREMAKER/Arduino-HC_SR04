@@ -27,5 +27,5 @@ void EchoSonic() {
   delayMicroseconds(15);
   digitalWrite(trigPin, LOW);
   duration = pulseIn(echoPin, HIGH);
-  cm = duration / 58;
+  float cm = duration / 58;
 ```
