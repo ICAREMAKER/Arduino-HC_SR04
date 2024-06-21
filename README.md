@@ -17,6 +17,7 @@ void setup() {
 void loop() {
     EchoSonic();
     Serial.println(cm);
+}
 ```
 
 ```C
@@ -28,4 +29,5 @@ void EchoSonic() {
   digitalWrite(trigPin, LOW);
   duration = pulseIn(echoPin, HIGH);
   float cm = duration / 58;
+}
 ```
